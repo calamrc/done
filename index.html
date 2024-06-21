@@ -1,11 +1,37 @@
-<!--Generate code to display the text "Done"-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Done</title>
-  </head>
-  <body>
-    <h1>Done</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Click</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3e5ab;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="chocolate.jpg" alt="Chocolate" id="chocolateImage" style="cursor: pointer;">
+        <div class="message" id="message">Here's your chocolate!</div>
+    </div>
+    <script>
+        document.getElementById('chocolateImage').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
 </html>
-
